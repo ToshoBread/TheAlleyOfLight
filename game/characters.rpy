@@ -44,35 +44,3 @@ image mirror_man_sprite_2 = ConditionSwitch(
     "mc_choice == 'Aine'", "mirror_man_f_2",
     "True", "mirror_man_m_2"
 )
-
-image TAoL_title = "images/Assets/TAoL_title.png"
-image glow:
-    "images/Assets/TAoL title_glow.png"
-    alpha 0.0
-    easein 2.0 alpha 1.0
-    easeout 2.0 alpha 0.3
-    repeat
-
-image bg dark_street = "images/Assets/bg/Dark_street.jpg"
-image bg library = "images/Assets/bg/Library.jpg"
-image bg book_desk = "images/Assets/bg/Book_desk.jpg"
-
-image bg library_dim = Transform("bg library", matrixcolor=BrightnessMatrix(-0.10) * SaturationMatrix(0.7))
-image bg library_cool = Transform("bg library", matrixcolor=TintMatrix((0.69, 0.77, 0.87, 1.0)) * BrightnessMatrix(-0.05))
-image bg library_warm = Transform("bg library", matrixcolor=TintMatrix((1.0, 0.84, 0.0, 1.0)) * BrightnessMatrix(0.05))
-
-image book_overlay = Transform("images/Assets/items/book.png", rotate=-10, align=(0.5, 0.5))
-
-transform left_sprite:
-    zoom 0.5 xalign 0.0 yalign 1.0
-transform center_sprite:
-    zoom 0.5 xalign 0.5 yalign 1.0
-transform right_sprite:
-    zoom 0.5 xalign 1.0 yalign 1.0
-transform select_left:
-    zoom 0.4 xalign 0.25 yalign 0.5
-transform select_right:
-    zoom 0.4 xalign 0.75 yalign 0.5
-
-transform title_logo:
-    zoom 0.25 xalign 0.5 yalign 0.15
