@@ -58,7 +58,7 @@ label prologue_alley:
     jump enter_library
 
 label ending_secret:
-    scene bg library
+    scene bg library_warm
     with dissolve
     show mc_sprite at center
     mc "Thank you for letting me help everyone... including myself."
@@ -69,7 +69,7 @@ label ending_secret:
     jump credits
 
 label ending_return:
-    scene bg library
+    scene bg library_warm
     with dissolve
     show mc_sprite at center
     mc "I want to go back."

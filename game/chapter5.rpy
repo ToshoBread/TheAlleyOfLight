@@ -1,5 +1,5 @@
 label chapter5:
-    scene bg library
+    scene bg library_cool
     with dissolve
     show mc_sprite at left_sprite
     narrator "A customer arrives. You begin helping them."

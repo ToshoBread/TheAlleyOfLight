@@ -1,5 +1,5 @@
 label chapter3:
-    scene bg library
+    scene bg library_dim
     with dissolve
     show mc_sprite at left_sprite
     narrator "A man walks in. He looks at you strangely."

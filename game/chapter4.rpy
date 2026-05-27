@@ -1,5 +1,5 @@
 label chapter4:
-    scene bg library
+    scene bg library_dim
     with dissolve
     show mc_sprite at center_sprite
     narrator "One night, no customers come."
