@@ -391,7 +391,7 @@ screen main_menu():
         yalign 0.9
         spacing gui.choice_spacing
 
-        textbutton _("Start") action Start() text_xalign 0.5
+        textbutton _("Start") action [Stop("music", fadeout=2.0), Start()] text_xalign 0.5
         textbutton _("Load") action ShowMenu("load") text_xalign 0.5
         textbutton _("Preferences") action ShowMenu("preferences") text_xalign 0.5
         textbutton _("About") action ShowMenu("about") text_xalign 0.5
@@ -1145,6 +1145,13 @@ style help_label_text:
 ## question.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#confirm
+
+style confirm_prompt_text:
+    color "#000000"
+
+style confirm_button_text:
+    color "#000000"
+    hover_color "#999e35"
 
 screen confirm(message, yes_action, no_action):
 
