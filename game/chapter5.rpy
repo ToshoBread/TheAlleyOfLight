@@ -1,5 +1,5 @@
 label chapter5:
-    scene bg library_int
+    scene bg library_cool
     with dissolve
     show mc_sprite at left_sprite
     narrator "A customer arrives. You begin helping them."
@@ -22,7 +22,11 @@ label chapter5:
             $ renpy.save("auto_ch5")
             jump chapter6
         "Why do I feel like this book is calling my name?":
-            show mc_sprite at left_sprite
+            scene bg book_desk_dim
+            with dissolve
+            $ renpy.pause(0.5, hard=True)
+            show book_overlay
+            with dissolve
             mc "Why do I feel like this book is calling my name?"
             mc "I have to know."
             narrator "You reach out and touch the flickering book."

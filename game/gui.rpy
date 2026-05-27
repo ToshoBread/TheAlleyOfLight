@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 ## Initialization
 ################################################################################
 
@@ -25,17 +25,17 @@ define config.check_conflicting_properties = True
 ## The colors of text in the interface.
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#cc0066'
+define gui.accent_color = '#ffee8d'
 
 ## The color used for a text button when it is neither selected nor hovered.
-define gui.idle_color = '#707070'
+define gui.idle_color = '#ffffff'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
 define gui.idle_small_color = '#606060'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#cc0066'
+define gui.hover_color = '#ffee8d'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
@@ -51,7 +51,7 @@ define gui.hover_muted_color = '#ea99c1'
 
 ## The colors used for dialogue and menu choice text.
 define gui.text_color = '#404040'
-define gui.interface_text_color = '#404040'
+define gui.interface_text_color = '#ffffff'
 
 
 ## Fonts and Font Sizes ########################################################
@@ -87,8 +87,8 @@ define gui.title_text_size = 75
 ## Main and Game Menus #########################################################
 
 ## The images used for the main and game menus.
-define gui.main_menu_background = "gui/main_menu.png"
-define gui.game_menu_background = "gui/game_menu.png"
+define gui.main_menu_background = "bg main_menu"
+define gui.game_menu_background = "images/Assets/bg/Dark_street.jpg"
 
 
 ## Dialogue ####################################################################

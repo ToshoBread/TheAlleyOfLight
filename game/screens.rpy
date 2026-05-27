@@ -343,6 +343,27 @@ style navigation_button:
 style navigation_button_text:
     properties gui.text_properties("navigation_button")
 
+style main_menu_button is navigation_button
+style main_menu_button_text is navigation_button_text:
+    idle_color "#ffffff"
+    hover_color "#ffee8d"
+
+image TAoL_title = "images/Assets/TAoL_title.png"
+image glow:
+    "images/Assets/TAoL title_glow.png"
+    alpha 0.0
+    easein 2.0 alpha 1.0
+    easeout 2.0 alpha 0.3
+    repeat
+
+image top_light = "images/Assets/top-light.png"
+
+transform title_logo:
+    zoom 0.23 xalign 0.5 yalign 0.05
+
+transform top_light_pos:
+    xalign 0.5 yalign 0.0
+
 
 ## Main Menu screen ############################################################
 ##
@@ -354,54 +375,33 @@ screen main_menu():
 
     tag menu
 
+    add "bg main_menu"
+
+    add "top_light" at top_light_pos
+
     add "TAoL_title" at title_logo
 
     add "glow" at title_logo
 
-    frame:
-        style "main_menu_frame"
+    vbox:
+        style_prefix "main_menu"
+        xalign 0.5
+        yalign 0.9
+        spacing gui.choice_spacing
 
-    use navigation
+        textbutton _("Start") action Start() text_xalign 0.5
+        textbutton _("Load") action ShowMenu("load") text_xalign 0.5
+        textbutton _("Preferences") action ShowMenu("preferences") text_xalign 0.5
+        textbutton _("About") action ShowMenu("about") text_xalign 0.5
 
-    if gui.show_name:
+        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+            textbutton _("Help") action ShowMenu("help") text_xalign 0.5
 
-        vbox:
-            style "main_menu_vbox"
-
-            text "[config.name!t]":
-                style "main_menu_title"
-
-            text "[config.version]":
-                style "main_menu_version"
+        if renpy.variant("pc"):
+            textbutton _("Quit") action Quit(confirm=False) text_xalign 0.5
 
 
-style main_menu_frame is empty
-style main_menu_vbox is vbox
-style main_menu_text is gui_text
-style main_menu_title is main_menu_text
-style main_menu_version is main_menu_text
 
-style main_menu_frame:
-    xsize 420
-    yfill True
-
-    background "gui/overlay/main_menu.png"
-
-style main_menu_vbox:
-    xalign 1.0
-    xoffset -30
-    xmaximum 1200
-    yalign 1.0
-    yoffset -30
-
-style main_menu_text:
-    properties gui.text_properties("main_menu", accent=True)
-
-style main_menu_title:
-    properties gui.text_properties("title")
-
-style main_menu_version:
-    properties gui.text_properties("version")
 
 
 ## Game Menu screen ############################################################
@@ -501,7 +501,7 @@ style game_menu_outer_frame:
     bottom_padding 45
     top_padding 180
 
-    background "gui/overlay/game_menu.png"
+    background None
 
 style game_menu_navigation_frame:
     xsize 420

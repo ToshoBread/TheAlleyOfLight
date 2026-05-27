@@ -1,5 +1,5 @@
 label chapter4:
-    scene bg library_int
+    scene bg library_dim
     with dissolve
     show mc_sprite at center_sprite
     narrator "One night, no customers come."
@@ -13,6 +13,11 @@ label chapter4:
         "There has to be answers here.":
             mc "There has to be answers here."
             mc "I need to know what this place really is."
+            scene bg book_desk_dim
+            with dissolve
+            $ renpy.pause(0.5, hard=True)
+            show book_overlay
+            with dissolve
             narrator "You search until you find an ancient ledger."
             narrator "\"The library exists for lost souls to finish their stories before moving on.\""
             $ truth += 1
