@@ -372,7 +372,7 @@ transform top_light_pos:
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
 screen main_menu():
-
+    
     tag menu
 
     add "bg main_menu"

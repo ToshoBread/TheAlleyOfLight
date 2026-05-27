@@ -1,4 +1,5 @@
 ﻿label start:
+    play music bgm_main_screen fadein 1.0
     scene black
     show aine_select at select_left
     show lucian_select at select_right

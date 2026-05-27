@@ -134,7 +134,7 @@ default preferences.afm_time = 15
 ## Controls the platform-specific place Ren'Py will place the save files for
 ## this game. The save files will be placed in:
 ##
-## Windows: %APPDATA\RenPy\<config.save_directory>
+## Windows: %APPDATA/RenPy/<config.save_directory>
 ##
 ## Macintosh: $HOME/Library/RenPy/<config.save_directory>
 ##
@@ -207,3 +207,5 @@ init python:
 ## by a slash.
 
 # define build.itch_project = "renpytom/test-project"
+
+define bgm_main_screen = "game/audio/Background Music/Main Menu Theme (Cinder _Til Midnight_ A Soundtrack).mp3"
