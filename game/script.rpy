@@ -1,5 +1,5 @@
 ﻿label start:
-    play music bg_music_main_menu fadein 2.0
+    play music bg_music_character_selection fadein 2.0 
     scene black
     show aine_select at select_left
     show lucian_select at select_right
@@ -7,6 +7,7 @@
     "Choose your character:"
     menu:
         "Aine":
+            play sound bgsfx_button_click volume 0.8
             $ mc_choice = "Aine"
             $ mc_name = "Aine"
             $ mc_color = "#cc0066"
@@ -14,6 +15,7 @@
             show mc_sprite at center_sprite
             with dissolve
         "Lucian":
+            play sound bgsfx_button_click volume 0.8
             $ mc_choice = "Lucian"
             $ mc_name = "Lucian"
             $ mc_color = "#0066cc"
@@ -21,12 +23,15 @@
             show mc_sprite at center_sprite
             with dissolve
     $ mc = Character(mc_name, color=mc_color)
+    stop music fadeout 3.0
     mc "My name is [mc_name]."
     jump prologue_alley
 
 label prologue_alley:
     scene black
     with dissolve
+    play music bgm_intro fadein 2.0 volume .75 
+    pause 3.0
     narrator "Everything is dark."
     narrator "You slowly open your eyes."
     narrator "Your head hurts."

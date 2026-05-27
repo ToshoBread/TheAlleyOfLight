@@ -373,7 +373,7 @@ transform top_light_pos:
 
 screen main_menu():
 
-    on "show" action Play("music", "audio/Background_Music/bg_music_main_menu.mp3", fadein=1.0, loop=True)
+    on "show" action Play("music", "audio/Background_Music/bg_music_main_menu.mp3", fadein=2.0, loop=True)
     
     tag menu
 
@@ -391,7 +391,7 @@ screen main_menu():
         yalign 0.9
         spacing gui.choice_spacing
 
-        textbutton _("Start") action [Stop("music", fadeout=2.0), Start()] text_xalign 0.5
+        textbutton _("Start") action [Stop("music", fadeout=5.0), Start()] text_xalign 0.5
         textbutton _("Load") action ShowMenu("load") text_xalign 0.5
         textbutton _("Preferences") action ShowMenu("preferences") text_xalign 0.5
         textbutton _("About") action ShowMenu("about") text_xalign 0.5
