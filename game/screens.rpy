@@ -372,6 +372,8 @@ transform top_light_pos:
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
 screen main_menu():
+
+    on "show" action Play("music", "audio/Background_Music/bg_music_main_menu.mp3", fadein=1.0, loop=True)
     
     tag menu
 

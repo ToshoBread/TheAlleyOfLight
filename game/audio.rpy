@@ -1,1 +1,1 @@
-define bgm_main_screen = "audio/Background Music/main_menu_theme_cinder_til_midnight.mp3"
+define bgm_character_selection = "audio/Background_Music/bg_music_character_selection.mp3"
