@@ -31,7 +31,7 @@ label prologue_alley:
     narrator "Your head hurts."
     narrator "You try to remember something... anything."
     narrator "But there's nothing."
-    scene bg alley
+    scene bg dark_street
     with dissolve
     show mc_sprite at center_sprite
     mc "Where am I?"
@@ -47,6 +47,8 @@ label prologue_alley:
             narrator "Silence."
             narrator "Then the darkness begins to creep toward you."
             narrator "You run."
+    scene bg library
+    with dissolve
     narrator "The door opens."
     mc "Hello?"
     narrator "Warm light spills from within."
@@ -56,7 +58,7 @@ label prologue_alley:
     jump enter_library
 
 label ending_secret:
-    scene bg library_int
+    scene bg library
     with dissolve
     show mc_sprite at center
     mc "Thank you for letting me help everyone... including myself."
@@ -67,7 +69,7 @@ label ending_secret:
     jump credits
 
 label ending_return:
-    scene bg library_int
+    scene bg library
     with dissolve
     show mc_sprite at center
     mc "I want to go back."
@@ -79,7 +81,7 @@ label ending_return:
     jump credits
 
 label ending_stay:
-    scene bg library_int
+    scene bg library
     with dissolve
     show mc_sprite at center
     mc "Someone needs to keep the light on for the others."

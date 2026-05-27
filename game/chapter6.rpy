@@ -1,7 +1,7 @@
 label chapter6:
-    scene bg library_int
+    scene bg book_desk
     with dissolve
-    show mc_sprite at center_sprite
+    show book_overlay
     narrator "You finally open the flickering book."
     narrator "Memories flood in — the accident, regret, unfinished goodbyes."
     narrator "The rain. The headlights. The moment everything went dark."

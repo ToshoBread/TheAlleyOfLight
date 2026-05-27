@@ -1,5 +1,5 @@
 label chapter1:
-    scene bg library_int
+    scene bg library
     with dissolve
     show mc_sprite at left_sprite
     narrator "Days pass. You learn the rhythm of the library."

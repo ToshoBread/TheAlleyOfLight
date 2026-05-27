@@ -354,6 +354,8 @@ screen main_menu():
 
     tag menu
 
+    add "images/Assets/bg/Dark_street.jpg"
+
     add "TAoL_title" at title_logo
 
     add "glow" at title_logo

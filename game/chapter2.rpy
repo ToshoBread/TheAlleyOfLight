@@ -1,5 +1,5 @@
 label chapter2:
-    scene bg library_int
+    scene bg library
     with dissolve
     show mc_sprite at left_sprite
     narrator "The next visitor is a middle-aged woman."

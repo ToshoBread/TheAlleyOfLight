@@ -1,5 +1,5 @@
 label chapter4:
-    scene bg library_int
+    scene bg library
     with dissolve
     show mc_sprite at center_sprite
     narrator "One night, no customers come."
@@ -13,6 +13,9 @@ label chapter4:
         "There has to be answers here.":
             mc "There has to be answers here."
             mc "I need to know what this place really is."
+            scene bg book_desk
+            with dissolve
+            show book_overlay
             narrator "You search until you find an ancient ledger."
             narrator "\"The library exists for lost souls to finish their stories before moving on.\""
             $ truth += 1

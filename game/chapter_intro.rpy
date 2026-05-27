@@ -1,5 +1,5 @@
 label enter_library:
-    scene bg library_int
+    scene bg library
     with dissolve
     show mc_sprite at left_sprite
     narrator "Rows of books fill the room."
@@ -25,6 +25,9 @@ label enter_library:
     mc "Me too."
     narrator "The glowing book shines brighter."
     customer "That book... it's glowing."
+    scene bg book_desk
+    with dissolve
+    show book_overlay
     narrator "You pick up the glowing book."
     narrator "It opens on its own."
     narrator "Images flicker — a building, silence, rain."
@@ -35,12 +38,20 @@ label enter_library:
     customer "I'm scared."
     menu:
         "Close the book.":
+            scene bg library
+            with dissolve
+            show mc_sprite at left_sprite
+            show customer_sprite at right_sprite
+            with dissolve
             customer "I'm not ready to let go."
             narrator "Light surrounds her."
             narrator "She closes the book and walks outside."
         "Let go.":
-            hide customer_sprite
-            show customer_sprite_thanks at right_sprite with dissolve
+            scene bg library
+            with dissolve
+            show mc_sprite at left_sprite
+            show customer_sprite_thanks at right_sprite
+            with dissolve
             customer "I understand now."
             narrator "She smiles softly."
             customer "Thank you."
