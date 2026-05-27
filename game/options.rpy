@@ -207,5 +207,3 @@ init python:
 ## by a slash.
 
 # define build.itch_project = "renpytom/test-project"
-
-define bgm_main_screen = "game/audio/Background Music/Main Menu Theme (Cinder _Til Midnight_ A Soundtrack).mp3"
