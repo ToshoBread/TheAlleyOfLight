@@ -7,6 +7,8 @@ label enter_library:
     narrator "Quiet. Peaceful."
     narrator "Then—"
     narrator "One book on the central desk begins to glow."
+    show glowing_book_overlay
+    with dissolve
     mc "Why is that glowing?"
     narrator "A bell chimes."
     show customer_sprite at right_sprite
@@ -25,9 +27,11 @@ label enter_library:
     mc "Me too."
     narrator "The glowing book shines brighter."
     customer "That book... it's glowing."
-    scene bg book_desk
+    scene bg book_desk_dim
     with dissolve
+    $ renpy.pause(0.5, hard=True)
     show book_overlay
+    with dissolve
     narrator "You pick up the glowing book."
     narrator "It opens on its own."
     narrator "Images flicker — a building, silence, rain."
@@ -61,6 +65,8 @@ label enter_library:
     narrator "You look around."
     narrator "Then you see it."
     narrator "One book on the shelf is glowing."
+    show glowing_book_overlay
+    with dissolve
     narrator "Flickering. Different."
     mc "That wasn't there before."
     show screen notify("Saving...")

@@ -5,9 +5,11 @@ label chapter7:
     narrator "The library falls deathly silent."
     narrator "No more customers arrive."
     narrator "You are alone with the truth."
-    scene bg book_desk
+    scene bg book_desk_dim
     with dissolve
+    $ renpy.pause(0.5, hard=True)
     show book_overlay
+    with dissolve
     narrator "A single final book materializes before you, glowing softly."
     narrator "It is your story."
     narrator "You open it."

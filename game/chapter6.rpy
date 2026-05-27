@@ -1,7 +1,9 @@
 label chapter6:
-    scene bg book_desk
+    scene bg book_desk_dim
     with dissolve
+    $ renpy.pause(0.5, hard=True)
     show book_overlay
+    with dissolve
     narrator "You finally open the flickering book."
     narrator "Memories flood in — the accident, regret, unfinished goodbyes."
     narrator "The rain. The headlights. The moment everything went dark."

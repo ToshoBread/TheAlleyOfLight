@@ -22,9 +22,11 @@ label chapter5:
             $ renpy.save("auto_ch5")
             jump chapter6
         "Why do I feel like this book is calling my name?":
-            scene bg book_desk
+            scene bg book_desk_dim
             with dissolve
+            $ renpy.pause(0.5, hard=True)
             show book_overlay
+            with dissolve
             mc "Why do I feel like this book is calling my name?"
             mc "I have to know."
             narrator "You reach out and touch the flickering book."
