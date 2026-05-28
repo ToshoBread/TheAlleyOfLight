@@ -92,6 +92,8 @@ label ending_secret:
 label ending_return:
     scene bg library_warm
     with dissolve
+    play music bgm_return_music fadein 1.0 volume 1.0 loop
+    pause 3.0
     show mc_sprite at center
     mc "I want to go back."
     mc "My story isn't over yet."
@@ -104,6 +106,8 @@ label ending_return:
 label ending_stay:
     scene bg library
     with dissolve
+    play music bgm_let_go_music fadein 1.0 volume 1.0 loop
+    pause 3.0
     show mc_sprite at center
     mc "Someone needs to keep the light on for the others."
     mc "I'll stay."
@@ -117,6 +121,8 @@ label ending_stay:
 label ending_let_go:
     scene black
     with dissolve
+    play music bgm_let_go_music fadein 1.0 volume 1.0 loop
+    pause 3.0
     mc "It's time."
     narrator "You close the book."
     narrator "Light surrounds you."

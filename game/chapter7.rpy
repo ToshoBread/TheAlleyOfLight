@@ -18,6 +18,7 @@ label chapter7:
     narrator "The rain. The crash. The moment between life and death."
     narrator "You read the final page."
     narrator "The library awaits your ending."
+    stop music fadeout 5.0
     $ ending = get_ending()
     if ending == "secret":
         jump ending_secret
