@@ -4,6 +4,8 @@ define bgm_scary = "audio/Background_Music/Chapters_Scenes_Related/scary_bg_musi
 define bgm_entering_the_library_music = "audio/Background_Music/Chapters_Scenes_Related/entering_the_glowing_library.mp3"
 define bgm_customer_with_grief_music = "audio/Background_Music/Chapters_Scenes_Related/customer_with_grief_arrives.mp3"
 define bgm_chapter_2_music = "audio/Background_Music/Chapters_Scenes_Related/chapter_2_bgm.mp3"
+define bgm_chapter_3_music = "audio/Background_Music/Chapters_Scenes_Related/purgatory_truth_chapter_3.mp3"
+
 
 
 
