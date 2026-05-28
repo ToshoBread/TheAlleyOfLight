@@ -23,19 +23,21 @@
             show mc_sprite at center_sprite
             with dissolve
     $ mc = Character(mc_name, color=mc_color)
-    stop music fadeout 3.0
+    stop music fadeout 0.0
     mc "My name is [mc_name]."
     jump prologue_alley
 
 label prologue_alley:
     scene black
     with dissolve
-    play music bgm_intro fadein 2.0 volume .75 
+    play music bgm_intro fadein 5.0 volume .75 
     pause 3.0
     narrator "Everything is dark."
     narrator "You slowly open your eyes."
     narrator "Your head hurts."
     narrator "You try to remember something... anything."
+    stop music fadeout 1.0
+    play sound bgsfx_creepy_sound volume 1.0 loop
     narrator "But there's nothing."
     scene bg dark_street
     with dissolve
@@ -44,17 +46,30 @@ label prologue_alley:
     narrator "You are standing in a quiet alley."
     narrator "It's empty. Too quiet."
     narrator "At the end of the alley, a soft, warm light spills from an open door."
+    stop sound fadeout 1.0
+    play music bgm_scary fadein 0.5 volume .75
     narrator "A library."
     menu:
         "Walk toward the light.":
+            play sound bgsfx_walking_on_water volume 0.8
             narrator "You walk toward the light."
+            stop music fadeout 1.0
         "Stay still.":
             narrator "You stay still."
+            stop music fadeout 1.0
             narrator "Silence."
+            play sound bgsfx_spooky_sound volume 1.0 loop
             narrator "Then the darkness begins to creep toward you."
+            stop sound fadeout 6.0
+            pause 6.0
+            play sound bgsfx_running_sound fadein 1.0 volume 1.0 loop
             narrator "You run."
     scene bg library
     with dissolve
+    stop sound fadeout 1.0
+    play music bgm_scary fadein 1.0 volume .75
+    play sound bgsfx_opening_door volume 1.0
+    pause 4.0
     narrator "The door opens."
     mc "Hello?"
     narrator "Warm light spills from within."
