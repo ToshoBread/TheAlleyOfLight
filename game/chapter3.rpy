@@ -4,7 +4,7 @@ label chapter3:
     show mc_sprite at left_sprite
     pause 2.0
     narrator "A man walks in. He looks at you strangely."
-    play sound bgm_chapter_3_music volume 0.7 loop
+    play music bgm_chapter_3_music volume 0.7 loop
     narrator "Something about him is unsettlingly familiar."
     show mirror_man_sprite at right_sprite
     with dissolve
@@ -20,6 +20,8 @@ label chapter3:
             show mirror_man_sprite_2 at right_sprite with dissolve
             mirror_man "You were in an accident... there was rain, headlights..."
             mirror_man "Wait, was that you?!"
+            stop music fadeout 3.0
+            pause 2.0
             show screen notify("Saving...")
             $ renpy.take_screenshot()
             $ renpy.save("auto_ch3")
@@ -30,6 +32,8 @@ label chapter3:
             $ clarity += 1
             show screen notify("+1 Clarity")
             mirror_man "Alright... but something about you feels unfinished too."
+            stop music fadeout 3.0
+            pause 2.0
             show screen notify("Saving...")
             $ renpy.take_screenshot()
             $ renpy.save("auto_ch3")

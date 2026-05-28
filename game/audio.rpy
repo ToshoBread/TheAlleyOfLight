@@ -5,9 +5,7 @@ define bgm_entering_the_library_music = "audio/Background_Music/Chapters_Scenes_
 define bgm_customer_with_grief_music = "audio/Background_Music/Chapters_Scenes_Related/customer_with_grief_arrives.mp3"
 define bgm_chapter_2_music = "audio/Background_Music/Chapters_Scenes_Related/chapter_2_bgm.mp3"
 define bgm_chapter_3_music = "audio/Background_Music/Chapters_Scenes_Related/purgatory_truth_chapter_3.mp3"
-
-
-
+define bgm_chapter_4_music = "audio/Background_Music/Chapters_Scenes_Related/chapter_4.mp3"
 
 define bgsfx_button_click = "audio/SFX/button_click.mp3"
 define bgsfx_creepy_sound = "audio/SFX/eerie_ambient.mp3"
