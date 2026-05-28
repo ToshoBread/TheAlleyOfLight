@@ -51,8 +51,10 @@ label prologue_alley:
     narrator "A library."
     menu:
         "Walk toward the light.":
-            play sound bgsfx_walking_on_water volume 0.8
+            play sound bgsfx_walking_on_water fadein 0.4 volume 0.8
             narrator "You walk toward the light."
+            stop sound fadeout 1.0
+            pause 1.5
             stop music fadeout 1.0
         "Stay still.":
             narrator "You stay still."
@@ -60,8 +62,8 @@ label prologue_alley:
             narrator "Silence."
             play sound bgsfx_spooky_sound volume 1.0 loop
             narrator "Then the darkness begins to creep toward you."
-            stop sound fadeout 6.0
-            pause 6.0
+            stop sound fadeout 2.0
+            pause 2.0
             play sound bgsfx_running_sound fadein 1.0 volume 1.0 loop
             narrator "You run."
     scene bg library

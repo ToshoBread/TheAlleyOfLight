@@ -10,6 +10,7 @@ label enter_library:
     show glowing_book_overlay
     with dissolve
     play sound bgsfx_shimmer volume 1.0
+    pause 2.0
     narrator "The light is warm. Inviting."
     mc "Why is that glowing?"
     stop sound fadeout 1.0
@@ -33,6 +34,7 @@ label enter_library:
     customer "I... I don't remember how I got here."
     mc "Me too."
     play sound bgsfx_shimmer volume 1.0 loop
+    pause 2.0
     narrator "The glowing book shines brighter."
     customer "That book... it's glowing."
     stop sound fadeout 1.0
@@ -60,12 +62,14 @@ label enter_library:
             with dissolve
             customer "I'm not ready to let go."
             play sound bgsfx_shimmer volume 0.5 loop
+            pause 2.0
             narrator "Light surrounds her."
             stop sound fadeout 1.0
             pause 2.0
             play sound bgsfx_book_closed_sound 
             narrator "She closes the book and walks outside."
             play sound bgsfx_walking_on_wood_sound volume 0.8
+            hide customer_sprite with dissolve 
             pause 3.0
         "Let go.":
             scene bg library
@@ -79,6 +83,7 @@ label enter_library:
             play sound bgsfx_shimmer volume 1.0
             narrator "She fades into light."
             stop sound fadeout 1.0
+            hide customer_sprite_thanks with dissolve
             pause 2.0
     narrator "The library is quiet again."
     mc "What was that?"

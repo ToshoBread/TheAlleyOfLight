@@ -1,6 +1,7 @@
 label chapter5:
     scene bg library_cool
     with dissolve
+    pause 3.0
     play music bgm_chapter_5_music fadein 1.0 volume 0.7 loop
     show mc_sprite at left_sprite
     narrator "A customer arrives. You begin helping them."
