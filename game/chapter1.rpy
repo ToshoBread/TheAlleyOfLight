@@ -2,13 +2,17 @@ label chapter1:
     scene bg library
     with dissolve
     show mc_sprite at left_sprite
+    stop music fadeout 1.0
     narrator "Days pass. You learn the rhythm of the library."
     narrator "Lost souls arrive. You help them find their endings."
     narrator "Then one evening, a young man appears."
+    play music bgm_customer_with_grief_music fadein 1.0 volume 1.0 loop
     show regretful_writer_sprite at right_sprite
     with dissolve
     regretful_writer "I... I died before I could write the ending."
     regretful_writer "My story feels so empty."
+    play sound bgsfx_book_turn_sound volume 1.0
+    pause 2.5
     narrator "His book opens to blank last pages."
     menu:
         "Tell me about the ending you always dreamt of writing.":
@@ -21,6 +25,7 @@ label chapter1:
             regretful_writer "I wanted it to end with hope... maybe redemption."
             hide regretful_writer_sprite_a with dissolve
             show regretful_writer_sprite_end at right_sprite with dissolve
+            pause 2.0
             show screen notify("Saving...")
             $ renpy.take_screenshot()
             $ renpy.save("auto_ch1")
@@ -35,6 +40,7 @@ label chapter1:
             regretful_writer "You're right... I was always running away from the truth."
             hide regretful_writer_sprite_b with dissolve
             show regretful_writer_sprite_end at right_sprite with dissolve
+            pause 2.0
             show screen notify("Saving...")
             $ renpy.take_screenshot()
             $ renpy.save("auto_ch1")
