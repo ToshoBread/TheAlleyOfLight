@@ -26,7 +26,6 @@ label chapter5:
             narrator "The customer thanks you warmly."
             $ empathy += 1
             show screen notify("+1 Empathy")
-            stop music fadeout 10.0
             pause 2.0
             show screen notify("Saving...")
             $ renpy.take_screenshot()
@@ -44,7 +43,6 @@ label chapter5:
             narrator "The vision intensifies — the crash, the rain, your own face."
             $ memory_fragments += 2
             show screen notify("+2 Memory Fragments")
-            stop music fadeout 10.0
             pause 2.0
             show screen notify("Saving...")
             $ renpy.take_screenshot()

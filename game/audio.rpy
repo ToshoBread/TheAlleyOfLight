@@ -23,4 +23,5 @@ define bgsfx_woman_crying_sound = "audio/SFX/woman_crying.mp3"
 define bgsfx_shaking_book_sound = "audio/SFX/shaking_book.mp3"
 define bgsfx_ears_ringing_sound = "audio/SFX/ears_ringing.mp3"
 define bgsfx_tire_screeching_sound = "audio/SFX/tire_screeching.mp3"
+define bgsfx_strong_rain_sound = "audio/SFX/strong_rain.mp3"
 

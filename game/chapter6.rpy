@@ -4,8 +4,12 @@ label chapter6:
     $ renpy.pause(0.5, hard=True)
     show book_overlay
     with dissolve
+    play sound bgsfx_book_turn_sound volume 1.0
+    pause 2.5
     narrator "You finally open the flickering book."
     narrator "Memories flood in — the accident, regret, unfinished goodbyes."
+    play sound bgsfx_strong_rain_sound fadein 1.0 volume 1.0 loop
+    pause 1.0
     narrator "The rain. The headlights. The moment everything went dark."
     narrator "You see yourself."
     narrator "You never made it out."
