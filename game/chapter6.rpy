@@ -21,6 +21,7 @@ label chapter6:
             narrator "The memories settle. Calmness washes over you."
             $ self_awareness += 2
             show screen notify("+2 Self-Awareness")
+            stop sound fadeout 5.0
             show screen notify("Saving...")
             $ renpy.take_screenshot()
             $ renpy.save("auto_ch6")
@@ -31,6 +32,7 @@ label chapter6:
             narrator "Pain intensifies. Denial echoes through the library."
             $ suspicion += 1
             show screen notify("+1 Suspicion")
+            stop sound fadeout 5.0
             show screen notify("Saving...")
             $ renpy.take_screenshot()
             $ renpy.save("auto_ch6")

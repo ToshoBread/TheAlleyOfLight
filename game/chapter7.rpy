@@ -8,6 +8,8 @@ label chapter7:
     scene bg book_desk_dim
     with dissolve
     $ renpy.pause(0.5, hard=True)
+    play sound bgsfx_book_turn_sound volume 1.0
+    pause 2.5
     show book_overlay
     with dissolve
     narrator "A single final book materializes before you, glowing softly."
