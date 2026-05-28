@@ -67,7 +67,7 @@ label prologue_alley:
     scene bg library
     with dissolve
     stop sound fadeout 1.0
-    play music bgm_scary fadein 1.0 volume .75
+    play music bgm_entering_the_library_music fadein 3.0 volume .5 loop
     play sound bgsfx_opening_door volume 1.0
     pause 4.0
     narrator "The door opens."
