@@ -6,6 +6,7 @@ define bgm_customer_with_grief_music = "audio/Background_Music/Chapters_Scenes_R
 define bgm_chapter_2_music = "audio/Background_Music/Chapters_Scenes_Related/chapter_2_bgm.mp3"
 define bgm_chapter_3_music = "audio/Background_Music/Chapters_Scenes_Related/purgatory_truth_chapter_3.mp3"
 define bgm_chapter_4_music = "audio/Background_Music/Chapters_Scenes_Related/chapter_4.mp3"
+define bgm_chapter_5_music = "audio/Background_Music/Chapters_Scenes_Related/painful_memories.mp3"
 
 define bgsfx_button_click = "audio/SFX/button_click.mp3"
 define bgsfx_creepy_sound = "audio/SFX/eerie_ambient.mp3"
@@ -19,4 +20,7 @@ define bgsfx_book_turn_sound = "audio/SFX/page_turn.mp3"
 define bgsfx_book_closed_sound = "audio/SFX/book_closed.mp3"
 define bgsfx_walking_on_wood_sound = "audio/SFX/walk_on_wood.mp3"
 define bgsfx_woman_crying_sound = "audio/SFX/woman_crying.mp3"
+define bgsfx_shaking_book_sound = "audio/SFX/shaking_book.mp3"
+define bgsfx_ears_ringing_sound = "audio/SFX/ears_ringing.mp3"
+define bgsfx_tire_screeching_sound = "audio/SFX/tire_screeching.mp3"
 
