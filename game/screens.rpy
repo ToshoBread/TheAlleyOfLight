@@ -1625,13 +1625,3 @@ style slider_vbox:
 style slider_slider:
     variant "small"
     xsize 900
-
-screen loading(duration):
-    tag menu
-    zorder 200
-
-    # Play the MP4 video
-    add Movie(play="images/Assets/loading_screen/loading_screen.mp4", loop=True)
-
-    # Hide after random duration
-    timer duration action Hide("loading")
