@@ -1,4 +1,8 @@
 ﻿label start:
+    $ dur = renpy.random.randint(5, 10)
+
+    show screen loading(dur)
+
     play music bg_music_character_selection fadein 2.0 
     scene black
     show aine_select at select_left
