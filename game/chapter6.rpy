@@ -20,9 +20,9 @@ label chapter6:
             mc "I never got to say goodbye to them."
             narrator "The memories settle. Calmness washes over you."
             $ self_awareness += 2
-            show screen notify("+2 Self-Awareness")
+            $ renpy.notify("+2 Self-Awareness")
             stop sound fadeout 5.0
-            show screen notify("Saving...")
+            $ renpy.notify("Saving...")
             $ renpy.take_screenshot()
             $ renpy.save("auto_ch6")
             jump chapter7
@@ -31,9 +31,9 @@ label chapter6:
             mc "I'm the one who helps people — I'm not one of the lost!"
             narrator "Pain intensifies. Denial echoes through the library."
             $ suspicion += 1
-            show screen notify("+1 Suspicion")
+            $ renpy.notify("+1 Suspicion")
             stop sound fadeout 5.0
-            show screen notify("Saving...")
+            $ renpy.notify("Saving...")
             $ renpy.take_screenshot()
             $ renpy.save("auto_ch6")
             jump chapter7

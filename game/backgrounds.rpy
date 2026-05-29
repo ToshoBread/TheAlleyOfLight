@@ -10,3 +10,5 @@ image bg library_warm = Transform("bg library", matrixcolor=TintMatrix((1.0, 0.8
 
 image book_overlay = Transform("images/Assets/items/book.png", rotate=-10, zoom=0.45, align=(0.5, 0.5))
 image glowing_book_overlay = Transform("images/Assets/items/glowing_book.png", zoom=0.05, align=(0.56, 0.30))
+
+image vignette_effect = "images/Assets/bg/vignette_effect.png"

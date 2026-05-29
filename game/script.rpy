@@ -47,11 +47,13 @@ label prologue_alley:
     narrator "It's empty. Too quiet."
     narrator "At the end of the alley, a soft, warm light spills from an open door."
     stop sound fadeout 1.0
+    pause 1.5
     play music bgm_scary fadein 0.5 volume .75
+    pause 2.0
     narrator "A library."
     menu:
         "Walk toward the light.":
-            play sound bgsfx_walking_on_water fadein 0.4 volume 0.8
+            play sound bgsfx_walking_on_water fadein 0.4 volume 0.8 loop
             narrator "You walk toward the light."
             stop sound fadeout 1.0
             pause 1.5
@@ -61,8 +63,17 @@ label prologue_alley:
             stop music fadeout 1.0
             narrator "Silence."
             play sound bgsfx_spooky_sound volume 1.0 loop
+            show vignette_effect:
+                alpha 0.0
+                linear 2.0 alpha 0.9
+                linear 3.0 alpha 0.0
+                repeat
+
             narrator "Then the darkness begins to creep toward you."
+            hide vignette_effect
             stop sound fadeout 2.0
+
+            hide vignette_effect
             pause 2.0
             play sound bgsfx_running_sound fadein 1.0 volume 1.0 loop
             narrator "You run."
@@ -75,7 +86,7 @@ label prologue_alley:
     narrator "The door opens."
     mc "Hello?"
     narrator "Warm light spills from within."
-    show screen notify("Saving...")
+    $ renpy.notify("Saving...")
     $ renpy.take_screenshot()
     $ renpy.save("auto_prologue")
     jump enter_library
@@ -134,7 +145,7 @@ label ending_let_go:
 label credits:
     scene black
     with dissolve
-    show screen notify("Saving...")
+    $ renpy.notify("Saving...")
     $ renpy.take_screenshot()
     $ renpy.save("auto_end")
     narrator "YOU HAVE COMPLETED The Alley of Light."

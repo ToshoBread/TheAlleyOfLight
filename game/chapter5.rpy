@@ -26,9 +26,9 @@ label chapter5:
             mc "Let's finish this together."
             narrator "The customer thanks you warmly."
             $ empathy += 1
-            show screen notify("+1 Empathy")
+            $ renpy.notify("+1 Empathy")
             pause 2.0
-            show screen notify("Saving...")
+            $ renpy.notify("Saving...")
             $ renpy.take_screenshot()
             $ renpy.save("auto_ch5")
             jump chapter6
@@ -43,9 +43,9 @@ label chapter5:
             narrator "You reach out and touch the flickering book."
             narrator "The vision intensifies — the crash, the rain, your own face."
             $ memory_fragments += 2
-            show screen notify("+2 Memory Fragments")
+            $ renpy.notify("+2 Memory Fragments")
             pause 2.0
-            show screen notify("Saving...")
+            $ renpy.notify("Saving...")
             $ renpy.take_screenshot()
             $ renpy.save("auto_ch5")
             jump chapter6

@@ -96,7 +96,7 @@ label enter_library:
     narrator "Flickering. Different."
     mc "That wasn't there before."
     stop sound fadeout 1.0
-    show screen notify("Saving...")
+    $ renpy.notify("Saving...")
     pause 3.0
     $ renpy.take_screenshot()
     $ renpy.save("auto_intro")

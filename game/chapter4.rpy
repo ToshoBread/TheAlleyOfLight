@@ -27,9 +27,9 @@ label chapter4:
             narrator "You search until you find an ancient ledger."
             narrator "\"The library exists for lost souls to finish their stories before moving on.\""
             $ truth += 1
-            show screen notify("+1 Truth")
+            $ renpy.notify("+1 Truth")
             stop music fadeout 3.0
-            show screen notify("Saving...")
+            $ renpy.notify("Saving...")
             $ renpy.take_screenshot()
             $ renpy.save("auto_ch4")
             jump chapter5
@@ -37,7 +37,7 @@ label chapter4:
             mc "I should stay at the desk."
             mc "More souls might need me."
             stop music fadeout 3.0
-            show screen notify("Saving...")
+            $ renpy.notify("Saving...")
             $ renpy.take_screenshot()
             $ renpy.save("auto_ch4")
             jump chapter5

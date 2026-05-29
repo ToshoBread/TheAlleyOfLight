@@ -19,14 +19,14 @@ label chapter1:
             mc "It's okay. You don't have to rush."
             mc "Tell me about the ending you always dreamt of writing."
             $ empathy += 1
-            show screen notify("+1 Empathy")
+            $ renpy.notify("+1 Empathy")
             hide regretful_writer_sprite with dissolve
             show regretful_writer_sprite_a at right_sprite with dissolve
             regretful_writer "I wanted it to end with hope... maybe redemption."
             hide regretful_writer_sprite_a with dissolve
             show regretful_writer_sprite_end at right_sprite with dissolve
             pause 2.0
-            show screen notify("Saving...")
+            $ renpy.notify("Saving...")
             $ renpy.take_screenshot()
             $ renpy.save("auto_ch1")
             jump chapter2
@@ -34,14 +34,14 @@ label chapter1:
             mc "The story can't stay unfinished forever."
             mc "What do you truly need to let go of to end it?"
             $ clarity += 1
-            show screen notify("+1 Clarity")
+            $ renpy.notify("+1 Clarity")
             hide regretful_writer_sprite with dissolve
             show regretful_writer_sprite_b at right_sprite with dissolve
             regretful_writer "You're right... I was always running away from the truth."
             hide regretful_writer_sprite_b with dissolve
             show regretful_writer_sprite_end at right_sprite with dissolve
             pause 2.0
-            show screen notify("Saving...")
+            $ renpy.notify("Saving...")
             $ renpy.take_screenshot()
             $ renpy.save("auto_ch1")
             jump chapter2
