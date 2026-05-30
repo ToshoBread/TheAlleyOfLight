@@ -346,7 +346,7 @@ style navigation_button_text:
 style main_menu_button is navigation_button
 style main_menu_button_text is navigation_button_text:
     idle_color "#ffffff"
-    hover_color "#ffee8d"
+    hover_color "#e8c96e"
 
 image TAoL_title = "images/Assets/TAoL_title.png"
 image glow:
@@ -389,7 +389,7 @@ screen main_menu():
         style_prefix "main_menu"
         xalign 0.5
         yalign 0.9
-        spacing gui.choice_spacing
+        spacing 15
 
         textbutton _("Start") action [Stop("music", fadeout=5.0), Start()] text_xalign 0.5
         textbutton _("Load") action ShowMenu("load") text_xalign 0.5
@@ -419,10 +419,7 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
     style_prefix "game_menu"
 
-    if main_menu:
-        add gui.game_menu_background
-    else:
-        add im.Scale(gui.game_menu_background, config.screen_width, config.screen_height)
+    add im.Scale(gui.game_menu_background, config.screen_width, config.screen_height)
 
     frame:
         style "game_menu_outer_frame"

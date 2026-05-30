@@ -4,7 +4,7 @@
 
     pause 2.0
     show screen loading(loading_time)
-    pause loading_time
+    $ renpy.pause(loading_time, hard=True)
     hide screen loading with dissolve
 
     play music bg_music_character_selection fadein 2.0 
@@ -102,9 +102,8 @@ label prologue_alley:
     jump enter_library
 
 label ending_secret:
-    scene bg library_warm
+    scene black
     with dissolve
-    show mc_sprite at center
     mc "Thank you for letting me help everyone... including myself."
     mc "I'll carry this light with me."
     narrator "You close the book and step toward the door."
@@ -113,11 +112,10 @@ label ending_secret:
     jump credits
 
 label ending_return:
-    scene bg library_warm
+    scene black
     with dissolve
     play music bgm_return_music fadein 1.0 volume 0.5 loop
     pause 3.0
-    show mc_sprite at center
     mc "I want to go back."
     mc "My story isn't over yet."
     narrator "Light surrounds you."
@@ -128,11 +126,10 @@ label ending_return:
     jump credits
 
 label ending_stay:
-    scene bg library
+    scene black
     with dissolve
     play music bgm_let_go_music fadein 1.0 volume 0.5 loop
     pause 3.0
-    show mc_sprite at center
     mc "Someone needs to keep the light on for the others."
     mc "I'll stay."
     narrator "You close the book."
@@ -162,6 +159,6 @@ label credits:
     $ renpy.pause(0.1, hard=True)
     $ renpy.take_screenshot()
     $ renpy.save("auto_end")
-    narrator "YOU HAVE COMPLETED The Alley of Light."
+    narrator "You have completed The Alley of Light."
     narrator "Thank you for playing."
     $ renpy.full_restart()
