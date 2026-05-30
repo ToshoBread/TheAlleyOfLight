@@ -25,17 +25,17 @@ define config.check_conflicting_properties = True
 ## The colors of text in the interface.
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#ffee8d'
+define gui.accent_color = '#e8c96e'
 
 ## The color used for a text button when it is neither selected nor hovered.
 define gui.idle_color = '#ffffff'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
-define gui.idle_small_color = '#606060'
+define gui.idle_small_color = '#909090'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#ffee8d'
+define gui.hover_color = '#e8c96e'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
@@ -46,8 +46,8 @@ define gui.insensitive_color = '#7070707f'
 
 ## Colors used for the portions of bars that are not filled in. These are not
 ## used directly, but are used when re-generating bar image files.
-define gui.muted_color = '#e066a3'
-define gui.hover_muted_color = '#ea99c1'
+define gui.muted_color = '#ffee8d'
+define gui.hover_muted_color = '#fff5cc'
 
 ## The colors used for dialogue and menu choice text.
 define gui.text_color = '#404040'
@@ -78,7 +78,7 @@ define gui.interface_text_size = 33
 define gui.label_text_size = 36
 
 ## The size of text on the notify screen.
-define gui.notify_text_size = 24
+define gui.notify_text_size = 30
 
 ## The size of the game's title.
 define gui.title_text_size = 75
