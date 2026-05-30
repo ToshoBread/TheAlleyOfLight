@@ -4,7 +4,7 @@ label chapter4:
     pause 3.0
     narrator "One night, no customers came."
     show mc_sprite at center_sprite with dissolve
-    play music bgm_chapter_4_music fadein 0.5 volume 0.7
+    play music bgm_chapter_4_music fadein 0.5 volume 0.5 loop
     pause 1.5
     narrator "You are alone."
     narrator "You wander through the endless shelves."

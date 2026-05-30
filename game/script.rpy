@@ -39,7 +39,7 @@
 label prologue_alley:
     scene black
     with dissolve
-    play music bgm_intro fadein 5.0 volume .75 
+    play music bgm_intro fadein 5.0 volume 0.5 
     pause 3.0
     narrator "Everything is dark."
     narrator "You slowly open your eyes."
@@ -89,7 +89,7 @@ label prologue_alley:
     scene bg library
     with dissolve
     stop sound fadeout 1.0
-    play music bgm_entering_the_library_music fadein 3.0 volume .5 loop
+    play music bgm_entering_the_library_music fadein 3.0 volume 0.5 loop
     play sound bgsfx_opening_door volume 1.0
     pause 4.0
     narrator "The door opens."
@@ -114,7 +114,7 @@ label ending_secret:
 label ending_return:
     scene bg library_warm
     with dissolve
-    play music bgm_return_music fadein 1.0 volume 1.0 loop
+    play music bgm_return_music fadein 1.0 volume 0.5 loop
     pause 3.0
     show mc_sprite at center
     mc "I want to go back."
@@ -128,7 +128,7 @@ label ending_return:
 label ending_stay:
     scene bg library
     with dissolve
-    play music bgm_let_go_music fadein 1.0 volume 1.0 loop
+    play music bgm_let_go_music fadein 1.0 volume 0.5 loop
     pause 3.0
     show mc_sprite at center
     mc "Someone needs to keep the light on for the others."
@@ -143,7 +143,7 @@ label ending_stay:
 label ending_let_go:
     scene black
     with dissolve
-    play music bgm_let_go_music fadein 1.0 volume 1.0 loop
+    play music bgm_let_go_music fadein 1.0 volume 0.5 loop
     pause 3.0
     mc "It's time."
     narrator "You close the book."

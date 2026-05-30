@@ -1,12 +1,12 @@
 label chapter1:
     scene bg library
     with dissolve
-    show mc_sprite at left_sprite
+    show mc_sprite at left_sprite with dissolve
     stop music fadeout 1.0
     narrator "Days pass. You learn the rhythm of the library."
     narrator "Lost souls arrive. You help them find their endings."
     narrator "Then one evening, a young man appears."
-    play music bgm_customer_with_grief_music fadein 1.0 volume 1.0 loop
+    play music bgm_customer_with_grief_music fadein 1.0 volume 0.5 loop
     show regretful_writer_sprite at right_sprite
     with dissolve
     regretful_writer "I... I died before I could write the ending."

@@ -1,10 +1,11 @@
 label chapter2:
     scene bg library
     with dissolve
-    show mc_sprite at left_sprite
     stop music fadeout 7.0
-    play music bgm_chapter_2_music fadein 4.0 volume .7 loop
-    pause 4.0
+    pause 1.5
+    show mc_sprite at left_sprite with dissolve
+    play music bgm_chapter_2_music fadein 4.0 volume .5 loop
+    pause 1.5
     narrator "The next visitor is a middle-aged woman."
     play sound bgsfx_woman_crying_sound volume 0.8 loop
     narrator "She cannot stop crying."

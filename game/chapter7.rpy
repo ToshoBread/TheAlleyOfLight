@@ -1,7 +1,7 @@
 label chapter7:
     scene bg library_cool
     with dissolve
-    show mc_sprite at center_sprite
+    show mc_sprite at center_sprite with dissolve
     narrator "The library falls deathly silent."
     narrator "No more customers arrive."
     narrator "You are alone with the truth."

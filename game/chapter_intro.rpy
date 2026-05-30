@@ -1,7 +1,7 @@
 label enter_library:
     scene bg library
     with dissolve
-    show mc_sprite at left_sprite
+    show mc_sprite at left_sprite with dissolve
     narrator "Rows of books fill the room."
     narrator "It feels endless."
     narrator "Quiet. Peaceful."

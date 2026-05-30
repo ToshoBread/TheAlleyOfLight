@@ -1,10 +1,10 @@
 label chapter3:
     scene bg library_dim
     with dissolve
-    show mc_sprite at left_sprite
+    show mc_sprite at left_sprite with dissolve
     pause 2.0
     narrator "A man walks in. He looks at you strangely."
-    play music bgm_chapter_3_music volume 0.7 loop
+    play music bgm_chapter_3_music volume 0.5 loop
     narrator "Something about him is unsettlingly familiar."
     show mirror_man_sprite at right_sprite
     with dissolve
