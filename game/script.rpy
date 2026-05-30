@@ -161,22 +161,22 @@ label credits:
     $ renpy.save("auto_end")
     narrator "You have completed The Alley of Light."
     narrator "Thank you for playing."
-    narrator ""
-    narrator "Project Manager and Computer Graphic Artist"
-    narrator "Paras, Darianne Ingrid Sol P."
-    narrator ""
-    narrator "Script Writer and Text Editor"
-    narrator "Agustin, Princess Joy O."
-    narrator ""
-    narrator "Multimedia Architect"
-    narrator "Petilos, Francois Erin L."
-    narrator ""
-    narrator "Audio-Video Specialist"
-    narrator "Dela Cruz, Vincent Zyrelle M."
-    narrator ""
-    narrator "Content Specialist and Computer Programmer"
-    narrator "Villamayor, Kenneth Roy M."
-    narrator ""
-    narrator "Computer Programmer"
-    narrator "Dionisio, Zion Nathan"
+    play music bgm_main_menu fadein 1.0 loop
+    $ credits_data = [
+        ("Project Manager and Computer Graphic Artist", "Paras, Darianne Ingrid Sol P."),
+        ("Script Writer and Text Editor", "Agustin, Princess Joy O."),
+        ("Multimedia Architect", "Petilos, Francois Erin L."),
+        ("Audio-Video Specialist", "Dela Cruz, Vincent Zyrelle M."),
+        ("Content Specialist and Computer Programmer", "Villamayor, Kenneth Roy M."),
+        ("Computer Programmer", "Dionisio, Zion Nathan"),
+    ]
+    $ i = 0
+    while i < len(credits_data):
+        $ credit_role, credit_name = credits_data[i]
+        show screen credits_display
+        with Dissolve(0.5)
+        $ renpy.pause(3.0, hard=True)
+        hide screen credits_display
+        $ i += 1
+    with dissolve
     $ renpy.full_restart()

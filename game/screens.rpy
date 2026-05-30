@@ -1632,6 +1632,26 @@ style slider_slider:
     variant "small"
     xsize 900
 
+screen credits_display():
+    frame:
+        background None
+        xalign 0.5 yalign 0.5
+        xsize 1200
+
+        vbox:
+            xalign 0.5
+            text credit_role:
+                xalign 0.5
+                size 36
+                color gui.accent_color
+                textalign 0.5
+            null height 15
+            text credit_name:
+                xalign 0.5
+                size 48
+                color "#ffffff"
+                textalign 0.5
+
 image loading_vid = Movie(
     play="images/Assets/loading_screen/loading_screen.webm",
     loop=True

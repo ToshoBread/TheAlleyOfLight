@@ -9,6 +9,7 @@ define bgm_chapter_4_music = "audio/Background_Music/Chapters_Scenes_Related/cha
 define bgm_chapter_5_music = "audio/Background_Music/Chapters_Scenes_Related/painful_memories.mp3"
 define bgm_let_go_music = "audio/Background_Music/Chapters_Scenes_Related/customer_choosing_to_let_go_or_stay.mp3"
 define bgm_return_music = "audio/Background_Music/Chapters_Scenes_Related/customer_choosing_to_return.mp3"
+define bgm_main_menu = "audio/Background_Music/bg_music_main_menu.mp3"
 
 define bgsfx_button_click = "audio/SFX/button_click.mp3"
 define bgsfx_creepy_sound = "audio/SFX/eerie_ambient.mp3"
