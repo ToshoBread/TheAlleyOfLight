@@ -162,6 +162,7 @@ label credits:
     narrator "You have completed The Alley of Light."
     narrator "Thank you for playing."
     play music bgm_main_menu fadein 1.0 loop
+    window hide
     $ credits_data = [
         ("Project Manager and Computer Graphic Artist", "Paras, Darianne Ingrid Sol P."),
         ("Script Writer and Text Editor", "Agustin, Princess Joy O."),
@@ -175,8 +176,9 @@ label credits:
         $ credit_role, credit_name = credits_data[i]
         show screen credits_display
         with Dissolve(0.5)
-        $ renpy.pause(3.0, hard=True)
+        $ renpy.pause(3.0)
         hide screen credits_display
         $ i += 1
+    window show
     with dissolve
     $ renpy.full_restart()
