@@ -96,6 +96,7 @@ label prologue_alley:
     mc "Hello?"
     narrator "Warm light spills from within."
     $ renpy.notify("Saving...")
+    $ renpy.pause(0.1, hard=True)
     $ renpy.take_screenshot()
     $ renpy.save("auto_prologue")
     jump enter_library
@@ -122,6 +123,7 @@ label ending_return:
     narrator "Light surrounds you."
     narrator "You wake up."
     narrator "The rain has stopped."
+    stop music fadeout 5.0
     narrator "You are alive."
     jump credits
 
@@ -137,6 +139,7 @@ label ending_stay:
     narrator "The door opens."
     narrator "A new customer enters."
     narrator "You smile."
+    stop music fadeout 5.0
     narrator "There are more stories to help find their ending."
     jump credits
 
@@ -148,6 +151,7 @@ label ending_let_go:
     mc "It's time."
     narrator "You close the book."
     narrator "Light surrounds you."
+    stop music fadeout 5.0
     narrator "You fade into the light."
     jump credits
 
@@ -155,6 +159,7 @@ label credits:
     scene black
     with dissolve
     $ renpy.notify("Saving...")
+    $ renpy.pause(0.1, hard=True)
     $ renpy.take_screenshot()
     $ renpy.save("auto_end")
     narrator "YOU HAVE COMPLETED The Alley of Light."

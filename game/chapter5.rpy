@@ -29,6 +29,7 @@ label chapter5:
             $ renpy.notify("+1 Empathy")
             pause 2.0
             $ renpy.notify("Saving...")
+            $ renpy.pause(0.1, hard=True)
             $ renpy.take_screenshot()
             $ renpy.save("auto_ch5")
             jump chapter6
@@ -46,6 +47,7 @@ label chapter5:
             $ renpy.notify("+2 Memory Fragments")
             pause 2.0
             $ renpy.notify("Saving...")
+            $ renpy.pause(0.1, hard=True)
             $ renpy.take_screenshot()
             $ renpy.save("auto_ch5")
             jump chapter6

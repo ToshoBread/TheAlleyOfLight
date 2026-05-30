@@ -28,6 +28,7 @@ label chapter2:
             pause 2.0
             stop music fadeout 3.0
             $ renpy.notify("Saving...")
+            $ renpy.pause(0.1, hard=True)
             $ renpy.take_screenshot()
             $ renpy.save("auto_ch2")
             jump chapter3
@@ -46,6 +47,7 @@ label chapter2:
             pause 2.0
             stop music fadeout 3.0
             $ renpy.notify("Saving...")
+            $ renpy.pause(0.1, hard=True)
             $ renpy.take_screenshot()
             $ renpy.save("auto_ch2")
             jump chapter3
@@ -63,6 +65,7 @@ label chapter2:
             pause 2.0
             stop music fadeout 3.0
             $ renpy.notify("Saving...")
+            $ renpy.pause(0.1, hard=True)
             $ renpy.take_screenshot()
             $ renpy.save("auto_ch2")
             jump chapter3

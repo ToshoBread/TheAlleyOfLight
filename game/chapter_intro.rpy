@@ -98,6 +98,7 @@ label enter_library:
     stop sound fadeout 1.0
     $ renpy.notify("Saving...")
     pause 3.0
+    $ renpy.pause(0.1, hard=True)
     $ renpy.take_screenshot()
     $ renpy.save("auto_intro")
     jump chapter1

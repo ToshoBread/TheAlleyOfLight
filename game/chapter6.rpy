@@ -23,6 +23,7 @@ label chapter6:
             $ renpy.notify("+2 Self-Awareness")
             stop sound fadeout 5.0
             $ renpy.notify("Saving...")
+            $ renpy.pause(0.1, hard=True)
             $ renpy.take_screenshot()
             $ renpy.save("auto_ch6")
             jump chapter7
@@ -34,6 +35,7 @@ label chapter6:
             $ renpy.notify("+1 Suspicion")
             stop sound fadeout 5.0
             $ renpy.notify("Saving...")
+            $ renpy.pause(0.1, hard=True)
             $ renpy.take_screenshot()
             $ renpy.save("auto_ch6")
             jump chapter7

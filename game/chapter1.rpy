@@ -2,7 +2,7 @@ label chapter1:
     scene bg library
     with dissolve
     show mc_sprite at left_sprite with dissolve
-    stop music fadeout 1.0
+    stop music fadeout 7.0
     narrator "Days pass. You learn the rhythm of the library."
     narrator "Lost souls arrive. You help them find their endings."
     narrator "Then one evening, a young man appears."
@@ -27,6 +27,7 @@ label chapter1:
             show regretful_writer_sprite_end at right_sprite with dissolve
             pause 2.0
             $ renpy.notify("Saving...")
+            $ renpy.pause(0.1, hard=True)
             $ renpy.take_screenshot()
             $ renpy.save("auto_ch1")
             jump chapter2
@@ -42,6 +43,7 @@ label chapter1:
             show regretful_writer_sprite_end at right_sprite with dissolve
             pause 2.0
             $ renpy.notify("Saving...")
+            $ renpy.pause(0.1, hard=True)
             $ renpy.take_screenshot()
             $ renpy.save("auto_ch1")
             jump chapter2
