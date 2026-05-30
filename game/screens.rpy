@@ -1625,3 +1625,35 @@ style slider_vbox:
 style slider_slider:
     variant "small"
     xsize 900
+
+image loading_vid = Movie(
+    play="images/Assets/loading_screen/loading_screen.webm",
+    loop=True
+)
+
+transform loading_bar_fill(duration):
+    xanchor 0.0
+    xzoom 0.0
+    linear duration xzoom 1.0
+
+screen loading(duration):
+    zorder 200
+    add "loading_vid" xysize (1920, 1080)
+
+    text "Loading...":
+        xalign 0.5
+        yalign 0.82
+        size 30
+        color "#FFF"
+
+    # Background track + fill bar magkasama sa loob ng frame
+    frame:
+        xalign 0.5
+        yalign 0.9
+        xsize 604
+        ysize 39
+        background "#1a1a1a"
+        padding (0, 0, 0, 0)
+
+        # Fill bar nasa loob ng frame, naka-left
+        add Solid("#E8C96E") xysize (600, 35) xanchor 0.0 xpos 0 ypos 2 at loading_bar_fill(duration)

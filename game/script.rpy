@@ -1,5 +1,14 @@
 ﻿label start:
+    # Random loading duration (5–10 sec)
+    $ loading_time = renpy.random.randint(5, 10)
+
+    pause 2.0
+    show screen loading(loading_time)
+    pause loading_time
+    hide screen loading with dissolve
+
     play music bg_music_character_selection fadein 2.0 
+    pause 1.5
     scene black
     show aine_select at select_left
     show lucian_select at select_right
