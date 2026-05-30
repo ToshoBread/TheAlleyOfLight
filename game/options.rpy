@@ -150,7 +150,7 @@ define config.save_directory = "TheAlleyofLight-1779565503"
 ##
 ## The icon displayed on the taskbar or dock.
 
-define config.window_icon = "gui/window_icon.png"
+define config.window_icon = "images/Assets/items/flipped_book.png"
 
 
 ## Build configuration #########################################################
@@ -183,11 +183,17 @@ init python:
     build.classify('**/.**', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
+    build.classify('**.md', None)
+    build.classify('**.mmd', None)
 
     ## To archive files, classify them as 'archive'.
 
-    # build.classify('game/**.png', 'archive')
-    # build.classify('game/**.jpg', 'archive')
+    build.archive("images", "archive")
+    build.classify('game/**.png', 'archive')
+    build.classify('game/**.jpg', 'archive')
+    build.classify('game/**/*.ogg', 'archive')
+    build.classify('game/**/*.mp3', 'archive')
+    build.classify('game/**.webm', 'archive')
 
     ## Files matching documentation patterns are duplicated in a mac app build,
     ## so they appear in both the app and the zip file.
