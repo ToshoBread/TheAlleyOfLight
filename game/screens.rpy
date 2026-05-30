@@ -562,6 +562,15 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
+            null height 20
+            label _("Credits")
+            text _("Project Manager and Computer Graphic Artist\nParas, Darianne Ingrid Sol P.\n")
+            text _("Script Writer and Text Editor\nAgustin, Princess Joy O.\n")
+            text _("Multimedia Architect\nPetilos, Francois Erin L.\n")
+            text _("Audio-Video Specialist\nDela Cruz, Vincent Zyrelle M.\n")
+            text _("Content Specialist and Computer Programmer\nVillamayor, Kenneth Roy M.\n")
+            text _("Computer Programmer\nDionisio, Zion Nathan\n")
+
             text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
 
 
